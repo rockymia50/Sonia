@@ -5,192 +5,234 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="/Users/rogermcintosh/Sonia/Public/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./Public/assets/css/style.css" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
+
+
 <body>
-<div id="navbg">
-    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-        <a class="navbar-brand" href="#">
-            Sonia by Sonia
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
+    <!--- Added Google Analytics -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <div id="navbg">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <a class="navbar-brand" href="#">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item mx-auto nav-link active" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#modal">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
-</div> 
+        </nav>
+    </div>
 
     <section>
-<div class="container-fluid">
-    <img id="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.542in" height="7.639in">
-            <defs>
-                <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="1047px" height="550px">
-                    <feOffset in="SourceAlpha" dx="0" dy="164" />
-                    <feGaussianBlur result="blurOut" stdDeviation="2.236" />
-                    <feFlood flood-color="rgb(96, 90, 90)" result="floodOut" />
-                    <feComposite operator="atop" in="floodOut" in2="blurOut" />
-                    <feComponentTransfer>
-                        <feFuncA type="linear" slope="0.98" />
-                    </feComponentTransfer>
-                    <feMerge>
-                        <feMergeNode/>
-                        <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                </filter>
+        <div class="container-fluid">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.542in" height="7.639in">
+                <defs>
+                    <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="1047px" height="550px">
+                        <feOffset in="SourceAlpha" dx="0" dy="164" />
+                        <feGaussianBlur result="blurOut" stdDeviation="2.236" />
+                        <feFlood flood-color="rgb(96, 90, 90)" result="floodOut" />
+                        <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.98" />
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
 
-            </defs>
-            <g filter="url(#Filter_0)">
-                <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="220px" x="0px" y="293.5px">
-                    <tspan font-size="220px" font-family="Budhayanti Script" fill="#E6BAA6">Sonia</tspan>
-                </text>
-            </g>
-        </svg>
-    </img>
-</div>
-
+                </defs>
+                <g filter="url(#Filter_0)">
+                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="220px" x="0px" y="293.5px">
+                        <tspan font-size="220px" font-family="Budhayanti Script" fill="#E6BAA6">Sonia</tspan>
+                    </text>
+                </g>
+            </svg>
+            </img>
+        </div>
 
     </section>
 
-    <div class="parallax">
+    <div class="d-flex flex-row justify-content-between my-flex-container">
+        <div class="title p-2 my-flex-item mx-auto d-block" style="text-align: center">
+            <p>
+                <strong>MY ART
 
+                    <br> CURRENT PROJECTS</strong>
+            </p>
+        </div>
     </div>
+
+
 
 
     <section class="page1">
-        <div class="d-flex flex-row justify-content-between my-flex-container">
-            <div class="p-4 my-flex-item float-right" id="p1">
-                <p>
-                    Cupcake ipsum dolor sit amet. I love candy canes powder soufflé I love chupa chups chupa chups fruitcake. I love wafer marshmallow.
-                    Cookie halvah sugar plum danish cotton candy liquorice. Bonbon I love soufflé halvah candy canes. Chocolate
-                    cake I love caramels. Gingerbread marzipan sweet roll dragée. Biscuit icing jelly beans dragée jujubes
-                    sugar plum. Cheesecake I love cheesecake oat cake. Cupcake I love tart candy chocolate bar. Chocolate
-                    bar gummi bears icing macaroon. Jelly-o lollipop I love muffin sesame snaps halvah toffee dragée halvah.
-                    Wafer chocolate bar chocolate bar. Dragée I love liquorice I love jujubes cookie toffee chocolate bar
-                    chocolate bar. Cake cheesecake I love I love chocolate bar dessert pastry sugar plum caramels. Caramels
-                    macaroon sweet roll candy jelly beans macaroon.
+        <div class=" d-flex flex-row justify-content-between my-flex-container">
 
-                </p>
+            <div class="P1 p-2 my-flex-item">
+                <img src="./Public/assets/images/P1.png" class="image img-fluid " alt="Responsive image">
+                <div class="overlay">
+                    <div class="text">
+                        <h3> Mirrors</h3>
+                        <hr>
+                        <h3>Circa ~ 2016</h3>
+                    </div>
+                </div>
             </div>
 
 
-
-            <div class="p-2 my-flex-item float-right">
-                <img src="/Users/rogermcintosh/Sonia/Public/assets/images/P1.png" class="img-fluid float-right" alt="Responsive image">
-            </div>
-            <div class="p-2 my-flex-item float right">
-                <img src="/Users/rogermcintosh/Sonia/Public/assets/images/P2.png" class="img-fluid float-right" alt="Responsive image">
+            <div class="P2 p-2 my-flex-item">
+                <img src="./Public/assets/images/P2.png" class="image img-fluid " alt="Responsive image">
+                <div class="overlay">
+                    <div class="text">
+                        <h3> Pace</h3>
+                        <hr>
+                        <h3>Circa ~ Late 2016</h3>
+                    </div>
+                </div>
             </div>
 
         </div>
 
     </section>
-    <div class="parallax1">
-
-    </div>
 
     <section class="page2">
         <div class="d-flex flex-row justify-content-between my-flex-container">
-            <div class="p-2 my-flex-item">
-                <img src="/Users/rogermcintosh/Sonia/Public/assets/images/P3.jpg">
-            </div>
-            <div class="d-flex flex-row justify-content-between my-flex-container" id="p2">
 
-                <p>
-                    Cupcake ipsum dolor sit amet tart. Cake jelly-o powder sweet roll. Chocolate danish tiramisu cotton candy carrot cake I love
-                    danish. Candy sesame snaps bonbon dragée gummies caramels caramels chocolate bar. Carrot cake halvah
-                    cupcake wafer ice cream brownie oat cake cake I love. Jelly-o I love lemon drops marshmallow jelly dessert
-                    jelly sesame snaps. Chupa chups macaroon pudding halvah bonbon jelly ice cream tiramisu tart. Lemon drops
-                    danish marzipan cake I love I love jujubes I love. Ice cream cheesecake candy canes. Donut gummies cake
-                    carrot cake ice cream sweet pie donut. Chocolate apple pie sesame snaps apple pie carrot cake bear claw.
-                    Marzipan cheesecake jelly-o apple pie I love. Caramels jelly beans powder tart. I love jujubes chocolate
-                    bar topping oat cake soufflé pie brownie.
-                </p>
+            <div class="P3 p-2 my-flex-item mx-auto d-block">
+                <img src="./Public/assets/images/P3.png " class="image img-fluid " alt="Responsive image">
+                <div class="overlay1">
+                    <div class="text1">
+                        <h3> Creation</h3>
+                        <hr>
+                        <h3>Circa ~ Late 2016</h3>
+                    </div>
+                </div>
             </div>
-            <div class="p-2 my-flex-item" style="
-            margin-top: 3%;">
-                <img src="/Users/rogermcintosh/Sonia/Public/assets/images/P4.jpg">
-            </div>
-
         </div>
-
-
     </section>
-    <div class="parrallax2">
-    </div>
 
 
     <section class="page3">
+        <div class="d-flex flex-row justify-content-between my-flex-container">
+            <div class="P4 p-2 my-flex-item mx-auto d-block">
+                <img src="./Public/assets/images/P4.png" class="image img-fluid " alt="Responsive image">
+                <div class="overlay">
+                    <div class="text">
+                        <h3> Amist</h3>
+                        <hr>
+                        <h3>Circa ~ Early 2017</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section to add more images
+    <section class="page4">
         <div class="d-flex flex-row justify-content-between my-flex-container">
             <div class="p-2 my-flex-item">1</div>
             <div class="p-2 my-flex-item">2</div>
             <div class="p-2 my-flex-item">3</div>
         </div>
 
+    </section> 
+     -->
+
+    <section id="about">
+        <div class="d-flex flex-row justify-content-between my-flex-container">
+            <div class="P4 p-2 my-flex-item mx-auto d-block">
+                <div class="aboutme">
+                    <h1> Who I am</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare pretium ornare. Sed mollis risus
+                        diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Nunc auctor ligula et suscipit hendrerit. Aliquam erat volutpat. Cras fringilla, augue a auctor molestie,
+                        purus velit consectetur mauris, vel ullamcorper libero lorem et sapien. Sed ullamcorper facilisis
+                        leo, non rutrum lectus mattis ut. Cras et leo finibus, condimentum neque a, luctus. Sed dictum eros
+                        non dictum sollicitudin. Praesent ultrices nisl dui, vitae scelerisque elit volutpat a. Duis sapien
+                        erat, gravida ac mauris vehicula, bibendum consequat ex. Aliquam maximus justo et blandit pulvinar.
+                        Sed interdum sem id rhoncus auctor. Duis vehicula sed quam eget tristique. Donec dolor leo, gravida
+                        ut dolor at, interdum fermentum sapien.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <div class="btn-group" id="modal">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Let's Talk
-            </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Let's Talk</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="px-4 py-3">
-                                <div class="form-group">
-                                    <label for="exampleDropdownFormEmail1">First</label>
-                                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleDropdownFormPassword1">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleDropdownFormPassword1">Email</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleDropdownFormPassword1">Message</label>
-                                    <input type="text" class="form-control" id="message" placeholder="message">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
+
+
+
+    <div class="d-flex flex-row justify-content-between my-flex-container mx-auto">
+        <div class=" p-2 my-flex-item mx-auto">
+            <div class="btn-group" id="modal">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn" data-toggle="modal" data-target="#ModalCenter">
+                    <h3>Let's<br> Talk</h3>
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLongTitle">Let's Talk</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="DropdownFormEmail1">First</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="DropdownFormPassword1">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="DropdownFormPassword1">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="DropdownFormPassword1">Message</label>
+                                <input type="text" class="form-control" id="message" placeholder="message">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="p-2 my-flex-item float right" id="social">
-            Connect with
+
+    <footer>
+        <div class="p-2 my-flex-item">
+
             <a href="#">
                 <i class="fa fa-twitter"></i>
             </a>
@@ -202,8 +244,6 @@
             </a>
 
         </div>
-
-
     </footer>
 
 

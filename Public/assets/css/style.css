@@ -3,159 +3,339 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 /************ End Reset *******************/
 
-/********* Parallax ***************/
-
-.parallax {
-    /* The image used */
-    background-image: url("/Users/rogermcintosh/Sonia/Public/assets/images/cp1.png");
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.title {
+    font-family: 'Poiret One', cursive;
+    font-size: 4.25rem;
+    letter-spacing: 20% !important;
 }
 
-.parallax1{
-    /* The image used */
-    background-image: url("/Users/rogermcintosh/Sonia/Public/assets/images/cp3.png");
+.title:hover {}
 
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.navbar-nav {
+    font-family: 'Poiret One', cursive;
+    margin-left: 70%;
 }
 
-.parrallax2{
-    /* The image used */
-    background-image:url("/Users/rogermcintosh/Sonia/Public/assets/images/cp4.png");
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#logo {
+    width: 65%;
+    margin-left: 17%;
 }
 
 
-/************* End Parallax ********************/
 
+/****************  Alignments *****************/
 
-logo{
+.aboutme {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+}
+
+/************** End Picture Alignments *************/
+
+/************** Image Overlays *******************/
+
+.P1 {
+    position: relative;
+    width: 50%;
+    margin-left: 9%;
+    display: inline-block;
+}
+
+.P2 {
+    position: relative;
+    width: 50%;
+    margin-right: 9%;
+}
+
+/* .P3 {
+    position: relative;
+    width: 50%;
+    width: 82%;
+} */
+
+.P4 {
+    position: relative;
+    width: 50%;
+    margin-left: 9%;
+}
+
+.image {
+    display: block;
     width: 100%;
     height: auto;
-
 }
 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(148, 148, 148, 0.384);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
 
-
-img {
+.P1:hover .overlay {
     width: 100%;
-    height: auto;
+    left: 0;
 }
 
-.path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear forwards;
-  }
-  
-  @keyframes dash {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
+.P2:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+/* .P3:hover .overlay {
+    width: 100%;
+    left:0;
+    
+  } */
+
+.P4:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-align: center;
+}
+
+/*************End Image Overlays ****************/
+
+.P3 {
+    position: relative;
+    width: 50%;
+    width: 82%;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+.P3:hover .overlay1 {
+    opacity: 1;
+}
+
+.text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/**************** Page Sections ******************/
+
+.page1,
+.page2,
+.page3,
+.page4,
+.about {
+    margin-top: 5%;
+}
 
 
-  /************* Navbar *************/
+/************* Navbar *************/
 
+#navbar {
+    position: fixed;
+}
 
-
-  #navbar{
-      position: fixed;
-      
-  }
-
-#navbarNav{
+#navbarNav {
     margin-left: 185%;
 }
 
-  /************* End *************/
+/************* End *************/
 
-  /* Paragraph styles */
 
-  #p1{
-    width: 50%
-  }
 
-  #p2{
-      width: 35%
-  }
-
-/* footer */
-
-#modal{
-    width:40%;
-    margin-left: 45%;
+.btn{
+    background-color: rgba(230, 186, 166, 0.445);
+    font-family: 'Poiret One', cursive;
+   
 }
 
-  #social{
-      margin-left: 37%;
-      font-size: 30px;
-  }
+.btn-group>.btn:first-child {
+    border-radius: 50%;
+}
+
+.btn:hover{
+    color: rgb(230, 186, 166);
+
+}
+
+footer {
+    width: 40;
+    font-size: 100px;
+    color: rgb(230, 186, 166);
+    text-align: center;
+    
+}
+
+
+.fa{
+    color: rgb(230, 186, 166);
+    padding:3%;
+   
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
