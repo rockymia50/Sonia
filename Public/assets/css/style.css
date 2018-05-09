@@ -141,18 +141,39 @@ table {
     font-family: 'Poiret One', cursive;
     font-size: 4.25rem;
     letter-spacing: 20% !important;
+    margin-bottom: 5%;
 }
-
-.title:hover {}
 
 .navbar-nav {
     font-family: 'Poiret One', cursive;
-    margin-left: 70%;
+    font-size:2.25rem;
+    display:inline-flex;
 }
 
-#logo {
-    width: 65%;
-    margin-left: 17%;
+.nav-item {
+    color:black;
+
+}
+
+.nav-item:hover{
+    color:rgb(230, 186, 166);
+}
+
+ul {
+    display:inline-flex;
+    position: fixed;
+    margin-left: 37%;
+}
+
+li {
+    margin-right:5%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -164,146 +185,16 @@ table {
     font-family: 'Poiret One', cursive;
 }
 
+.view{
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
 /************** End Picture Alignments *************/
 
-/************** Image Overlays *******************/
-
-.P1 {
-    position: relative;
-    width: 50%;
-    margin-left: 9%;
-    display: inline-block;
-}
-
-.P2 {
-    position: relative;
-    width: 50%;
-    margin-right: 9%;
-}
-
-/* .P3 {
-    position: relative;
-    width: 50%;
-    width: 82%;
-} */
-
-.P4 {
-    position: relative;
-    width: 50%;
-    margin-left: 9%;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(148, 148, 148, 0.384);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-}
-
-.P1:hover .overlay {
-    width: 100%;
-    left: 0;
-}
-
-.P2:hover .overlay {
-    width: 100%;
-    left: 0;
-}
-
-/* .P3:hover .overlay {
-    width: 100%;
-    left:0;
-    
-  } */
-
-.P4:hover .overlay {
-    width: 100%;
-    left: 0;
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    white-space: nowrap;
-    text-align: center;
-}
-
-/*************End Image Overlays ****************/
-
-.P3 {
-    position: relative;
-    width: 50%;
-    width: 82%;
-}
-
-.overlay1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.178);
-}
-
-.P3:hover .overlay1 {
-    opacity: 1;
-}
-
-.text1 {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/**************** Page Sections ******************/
-
-.page1,
-.page2,
-.page3,
-.page4,
-.about {
-    margin-top: 5%;
-}
-
-
-/************* Navbar *************/
-
-#navbar {
-    position: fixed;
-}
-
-#navbarNav {
-    margin-left: 185%;
-}
-
-/************* End *************/
-
-
+/****************  Contact ***************/
 
 .btn{
     background-color: rgba(230, 186, 166, 0.445);
@@ -319,6 +210,8 @@ table {
     color: rgb(230, 186, 166);
 
 }
+
+/****************  End Contact ************/
 
 footer {
     width: 40;

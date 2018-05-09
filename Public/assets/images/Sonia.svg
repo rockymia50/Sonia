@@ -1,0 +1,23 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.542in" height="7.639in">
+                <defs>
+                    <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="900px" height="550px">
+                        <feOffset in="SourceAlpha" dx="0" dy="164" />
+                        <feGaussianBlur result="blurOut" stdDeviation="2.236" />
+                        <feFlood flood-color="rgb(96, 90, 90)" result="floodOut" />
+                        <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.98" />
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                </defs>
+                <g filter="url(#Filter_0)">
+                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="220px" x="0px" y="293.5px">
+                        <tspan font-size="220px" font-family="Budhayanti Script" fill="#E6BAA6">Sonia</tspan>
+                    </text>
+                </g>
+            </svg>
